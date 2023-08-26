@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MIT License"
+issueTrackerURL = "https://github.com/Mrthomas20121/Create-Tools/issues"
+
+[[mods]]
+modId = "create_tools"
+version = "1.0.0"
+displayName = "Create Tools Complement"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/create-tools"
+#logoFile="tinkers_reforged_logo.png"
+credits = "Team CoFH"
+authors = "Mrthomas20121"
+description = '''
+Add tools complement tools made with Create materials.
+'''
+
+[[dependencies.create_tools]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[43.1.1,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.create_tools]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.19.2,)"
+    ordering = "NONE"
+    side = "BOTH"
