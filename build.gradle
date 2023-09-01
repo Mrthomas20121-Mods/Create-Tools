@@ -99,13 +99,20 @@ repositories {
         name 'Thermal Maven'
         url 'https://maven.covers1624.net/'
     }
-    maven { // TOP
+    maven { // The One Probe and Create
         url 'https://maven.tterrag.com/'
+    }
+    maven { // CC Tweaked
+        name = "squiddev"
+        url = "https://squiddev.cc/maven/"
+        content {
+            includeGroup "org.squiddev"
+        }
     }
     maven { // JEI and Tinkers
         url 'https://dvs1.progwml6.com/files/maven/'
     }
-    maven { // Patchouli
+    maven { // Patchouli and fallback for Jei
         url 'https://maven.blamejared.com/'
     }
     maven { // Curios
@@ -123,8 +130,6 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    implementation(fg.deobf("appeng:appliedenergistics2-forge:${ae2_version}"))
-
     // compile against the JEI API but do not include it at runtime
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
@@ -135,8 +140,12 @@ dependencies {
 
     implementation fg.deobf("com.teamcofh:cofh_core:${mc_version}-${cofh_core_version}.+")
     implementation fg.deobf("com.teamcofh:thermal_core:${mc_version}-${thermal_core_version}.+")
+    implementation fg.deobf("com.teamcofh:thermal_foundation:${mc_version}-${thermal_core_version}.+")
     implementation fg.deobf("com.teamcofh:thermal_expansion:${mc_version}-${thermal_expansion_version}.+")
-    implementation fg.deobf("curse.maven:tools-complement-552642:4382367")
+    implementation fg.deobf("com.teamcofh:tools_complement:${mc_version}-${tools_version}")
+
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-1.19.2:0.6.8.a-14")
+    implementation fg.deobf("com.simibubi.create:create-1.19.2:0.5.1.a-29:all")
 }
 
 jar {

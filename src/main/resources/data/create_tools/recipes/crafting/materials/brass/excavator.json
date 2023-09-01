@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y ",
+    "#X#",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/brass"
+    },
+    "Y": {
+      "tag": "forge:storage_blocks/brass"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "create_tools:brass_excavator"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "create_tools:andesite_alloy_chestplate"
+  }
+}

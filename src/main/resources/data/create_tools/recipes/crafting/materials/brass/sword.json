@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/brass"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "create_tools:brass_sword"
+  }
+}

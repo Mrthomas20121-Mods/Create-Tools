@@ -6,7 +6,7 @@ issueTrackerURL = "https://github.com/Mrthomas20121/Create-Tools/issues"
 [[mods]]
 modId = "create_tools"
 version = "1.0.0"
-displayName = "Create Tools Complement"
+displayName = "Tools Complement: Create"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/create-tools"
 #logoFile="tinkers_reforged_logo.png"
 credits = "Team CoFH"
